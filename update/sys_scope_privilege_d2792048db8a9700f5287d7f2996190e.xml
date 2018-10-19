@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="HSE Incident Management">60669fcfdb25df00f5287d7f299619df</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-05-08 11:31:46</sys_created_on>
+        <sys_id>d2792048db8a9700f5287d7f2996190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sysevent</sys_name>
+        <sys_package display_value="HSE Incident Management" source="x_hease_hse_incide">60669fcfdb25df00f5287d7f299619df</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HSE Incident Management">60669fcfdb25df00f5287d7f299619df</sys_scope>
+        <sys_update_name>sys_scope_privilege_d2792048db8a9700f5287d7f2996190e</sys_update_name>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-05-08 11:31:46</sys_updated_on>
+        <target_name>sysevent</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>

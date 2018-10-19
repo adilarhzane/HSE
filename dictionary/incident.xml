@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="email_client=true,all_tables.query_hints=true,hasWorkflow=true,live_feed=true" audit="true" extends="task" label="Incident" max_length="40" name="incident" sizeclass="82" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="CI info" max_length="4000" name="x_hease_hse_incide_ci_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Customer reference no" max_length="40" name="x_hease_hse_incide_customer_reference_no" type="string"/>
+        <element label="First time fix" max_length="40" name="x_hease_hse_incide_first_time_fix" type="boolean"/>
+        <element label="Inconsistent CI" max_length="40" name="x_hease_hse_incide_inconsistent_ci" type="boolean"/>
+        <element label="Opened for" max_length="32" name="x_hease_hse_incide_opened_for" reference="sys_user" type="reference"/>
+        <element label="Problem candidate" max_length="40" name="x_hease_hse_incide_problem_candidate" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Vendor Reference no" max_length="40" name="x_hease_hse_incide_vendor_reference_no" type="string"/>
+    </element>
+</database>

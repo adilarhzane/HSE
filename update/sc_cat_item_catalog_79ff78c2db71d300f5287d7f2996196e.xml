@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Create Incident">e68fb0c2db71d300f5287d7f299619c6</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-05-02 08:02:12</sys_created_on>
+        <sys_id>79ff78c2db71d300f5287d7f2996196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Create Incident</sys_name>
+        <sys_package display_value="HSE Incident Management" source="x_hease_hse_incide">60669fcfdb25df00f5287d7f299619df</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HSE Incident Management">60669fcfdb25df00f5287d7f299619df</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_79ff78c2db71d300f5287d7f2996196e</sys_update_name>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-05-02 08:02:12</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

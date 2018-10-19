@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>x_hease_hse_incide_ci_info</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-08-10 09:33:43</sys_created_on>
+        <sys_id>b6d39c9edbbb9f002c18cc2c0b9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_hease_hse_incide_ci_info</sys_name>
+        <sys_package display_value="HSE Incident Management" source="x_hease_hse_incide">60669fcfdb25df00f5287d7f299619df</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HSE Incident Management">60669fcfdb25df00f5287d7f299619df</sys_scope>
+        <sys_update_name>sys_ui_policy_action_b6d39c9edbbb9f002c18cc2c0b9619b1</sys_update_name>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-08-10 09:33:43</sys_updated_on>
+        <table>incident</table>
+        <ui_policy display_value="Show/Hide CI Info">54c3949edbbb9f002c18cc2c0b9619ff</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

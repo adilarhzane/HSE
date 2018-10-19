@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sys_popup,service_portfolio</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-05-15 13:16:03</sys_created_on>
+        <sys_id>0274811adb0a1f402c18cc2c0b9619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sys_popup,service_portfolio</sys_name>
+        <sys_package display_value="HSE Incident Management" source="x_hease_hse_incide">60669fcfdb25df00f5287d7f299619df</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HSE Incident Management">60669fcfdb25df00f5287d7f299619df</sys_scope>
+        <sys_update_name>sys_ui_view_0274811adb0a1f402c18cc2c0b9619be</sys_update_name>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-05-15 13:16:03</sys_updated_on>
+        <title>Sys_popup,service_portfolio</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

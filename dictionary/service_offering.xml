@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="cmdb_ci_service" label="Service Offering" max_length="40" name="service_offering" sizeclass="196" type="collection">
+        <element default="False" label="Visible on portal" max_length="40" name="x_hease_hse_incide_visible_on_portal" type="boolean"/>
+    </element>
+</database>

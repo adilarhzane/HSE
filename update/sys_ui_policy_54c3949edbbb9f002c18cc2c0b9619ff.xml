@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="incident">x_hease_hse_incide_inconsistent_ci=true^EQ<item endquery="false" field="x_hease_hse_incide_inconsistent_ci" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>Show/Hide CI Info</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-08-10 09:33:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>54c3949edbbb9f002c18cc2c0b9619ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Show/Hide CI Info</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HSE Incident Management" source="x_hease_hse_incide">60669fcfdb25df00f5287d7f299619df</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HSE Incident Management">60669fcfdb25df00f5287d7f299619df</sys_scope>
+        <sys_update_name>sys_ui_policy_54c3949edbbb9f002c18cc2c0b9619ff</sys_update_name>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-08-10 09:33:30</sys_updated_on>
+        <table>incident</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Resolution information" section_id="541d8468db3193402c18cc2c0b96192a" sys_domain="global" table="incident" version="3" view="HSE_Default">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>close_code</element>
+            <position>0</position>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-04-27 12:28:57</sys_created_on>
+            <sys_id>641d4868db3193402c18cc2c0b96194b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution information" display_value="Resolution information" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">541d8468db3193402c18cc2c0b96192a</sys_ui_section>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-04-27 12:28:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>close_notes</element>
+            <position>1</position>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-04-27 12:28:57</sys_created_on>
+            <sys_id>e41d4868db3193402c18cc2c0b96194b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution information" display_value="Resolution information" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">541d8468db3193402c18cc2c0b96192a</sys_ui_section>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-04-27 12:28:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-04-27 12:28:57</sys_created_on>
+            <sys_id>681d4868db3193402c18cc2c0b96194b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution information" display_value="Resolution information" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">541d8468db3193402c18cc2c0b96192a</sys_ui_section>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-04-27 12:28:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resolved_by</element>
+            <position>3</position>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-04-27 12:28:57</sys_created_on>
+            <sys_id>e81d4868db3193402c18cc2c0b96194b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution information" display_value="Resolution information" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">541d8468db3193402c18cc2c0b96192a</sys_ui_section>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-04-27 12:28:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>calendar_stc</element>
+            <position>4</position>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-04-27 12:28:57</sys_created_on>
+            <sys_id>6c1d4868db3193402c18cc2c0b96194b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution information" display_value="Resolution information" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">541d8468db3193402c18cc2c0b96192a</sys_ui_section>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-04-27 12:28:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Resolution information</caption>
+            <header>false</header>
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-04-27 12:28:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>541d8468db3193402c18cc2c0b96192a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Resolution information</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="HSE Incident Management" source="x_hease_hse_incide">60669fcfdb25df00f5287d7f299619df</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HSE Incident Management">60669fcfdb25df00f5287d7f299619df</sys_scope>
+            <sys_update_name>sys_ui_section_541d8468db3193402c18cc2c0b96192a</sys_update_name>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-04-27 12:28:56</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="HSE Default" name="HSE_Default">c5b03bd8dbfd53402c18cc2c0b961967</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

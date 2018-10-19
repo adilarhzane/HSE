@@ -1,0 +1,2713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["f0bd3da3dbf0ef402c18cc2c0b961948"],"subflows":[],"stages":{},"activities":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description>This Workflow handles the lifecycle of an Incident </description>
+        <expected_sequences>b0bd3d63dbf0ef402c18cc2c0b961948,f8bd3d63dbf0ef402c18cc2c0b961943,f0bd3da3dbf0ef402c18cc2c0b96194e,70bd3da3dbf0ef402c18cc2c0b961949,f0bd3da3dbf0ef402c18cc2c0b96195e,f8bd3da3dbf0ef402c18cc2c0b961961,7cbd3da3dbf0ef402c18cc2c0b961960,70bd3da3dbf0ef402c18cc2c0b96195f,f0bd3da3dbf0ef402c18cc2c0b96194a,bcbd3da3dbf0ef402c18cc2c0b961950,74bd3da3dbf0ef402c18cc2c0b96194d,f0bd3da3dbf0ef402c18cc2c0b961948,30bd3da3dbf0ef402c18cc2c0b961945,bcbd3d63dbf0ef402c18cc2c0b961945,b0bd3da3dbf0ef402c18cc2c0b96194f,70bd3da3dbf0ef402c18cc2c0b96194b,bcbd3da3dbf0ef402c18cc2c0b961945,f4bd3da3dbf0ef402c18cc2c0b961963,fcbd3da3dbf0ef402c18cc2c0b96195f,30bd3da3dbf0ef402c18cc2c0b961950,45bd3da3dbf0ef402c18cc2c0b961964,3cbd3da3dbf0ef402c18cc2c0b961946,fcbd3da3dbf0ef402c18cc2c0b96194b,70bd3d63dbf0ef402c18cc2c0b961947</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>b0bd3d63dbf0ef402c18cc2c0b961948,f8bd3d63dbf0ef402c18cc2c0b961943,f0bd3da3dbf0ef402c18cc2c0b96194e,78bd3da3dbf0ef402c18cc2c0b961962,70bd3da3dbf0ef402c18cc2c0b961949,f0bd3da3dbf0ef402c18cc2c0b96195e,f8bd3da3dbf0ef402c18cc2c0b961961,7cbd3da3dbf0ef402c18cc2c0b961960,70bd3da3dbf0ef402c18cc2c0b96195f,f0bd3da3dbf0ef402c18cc2c0b96194a,bcbd3da3dbf0ef402c18cc2c0b961950,74bd3da3dbf0ef402c18cc2c0b96194d,f0bd3da3dbf0ef402c18cc2c0b961948,30bd3da3dbf0ef402c18cc2c0b961945,bcbd3d63dbf0ef402c18cc2c0b961945,b0bd3da3dbf0ef402c18cc2c0b96194f,70bd3da3dbf0ef402c18cc2c0b96194b,bcbd3da3dbf0ef402c18cc2c0b961945,f4bd3da3dbf0ef402c18cc2c0b961963,fcbd3da3dbf0ef402c18cc2c0b96195f,30bd3da3dbf0ef402c18cc2c0b961950,45bd3da3dbf0ef402c18cc2c0b961964,3cbd3da3dbf0ef402c18cc2c0b961946,fcbd3da3dbf0ef402c18cc2c0b96194b,70bd3d63dbf0ef402c18cc2c0b961947</full_sequences>
+        <journal/>
+        <max_activity_count>10000</max_activity_count>
+        <name>HSE Incident Management</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">b0bd3d63dbf0ef402c18cc2c0b961948</start>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>7cbd3d63dbf0ef402c18cc2c0b961941</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-15 10:31:13</sys_updated_on>
+        <table>incident</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="HSE Incident Management">d9175303db65df00f5287d7f299619a1</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>This Workflow handles the lifecycle of an Incident </description>
+        <name>HSE Incident Management</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-04-23 11:20:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d9175303db65df00f5287d7f299619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HSE Incident Management</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HSE Incident Management" source="x_hease_hse_incide">60669fcfdb25df00f5287d7f299619df</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HSE Incident Management">60669fcfdb25df00f5287d7f299619df</sys_scope>
+        <sys_update_name>wf_workflow_d9175303db65df00f5287d7f299619a1</sys_update_name>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-04-23 11:20:40</sys_updated_on>
+        <table>incident</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Branch">a246173ac0a8016400a47421cd41e42c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name/>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f0bd3da3dbf0ef402c18cc2c0b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>211</x>
+        <y>1073</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f0bd3da3dbf0ef402c18cc2c0b96194e"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="">f0bd3da3dbf0ef402c18cc2c0b96194e</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f8bd3da3dbf0ef402c18cc2c0b96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b0bd3d63dbf0ef402c18cc2c0b961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b0bd3d63dbf0ef402c18cc2c0b961948"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">b0bd3d63dbf0ef402c18cc2c0b961948</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>78bd3da3dbf0ef402c18cc2c0b961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>17</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Check if knowledge</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>fcbd3da3dbf0ef402c18cc2c0b96194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>1437</x>
+        <y>473</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=fcbd3da3dbf0ef402c18cc2c0b96194b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fcbd3da3dbf0ef402c18cc2c0b96194b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>34bd3da3dbf0ef402c18cc2c0b96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fcbd3da3dbf0ef402c18cc2c0b96194b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>70bd3da3dbf0ef402c18cc2c0b96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>knowledge=true^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fcbd3da3dbf0ef402c18cc2c0b96194b</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f4bd3da3dbf0ef402c18cc2c0b96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fcbd3da3dbf0ef402c18cc2c0b96194b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>70bd3da3dbf0ef402c18cc2c0b96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>knowledge=true^EQ</value>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fcbd3da3dbf0ef402c18cc2c0b96194b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>34bd3da3dbf0ef402c18cc2c0b96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fcbd3da3dbf0ef402c18cc2c0b96194b</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f4bd3da3dbf0ef402c18cc2c0b96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>// This script needs to set answer to 'yes' or 'no' to indicate the state of the activity.&#13;
+//&#13;
+// For example,&#13;
+//&#13;
+//   answer = ifScript();&#13;
+//&#13;
+//   function ifScript() {&#13;
+//      if (condition is true) {&#13;
+//         return 'yes';&#13;
+//      }&#13;
+//      return 'no';&#13;
+//   }&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Check if knowledge">fcbd3da3dbf0ef402c18cc2c0b96194b</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>3cbd3da3dbf0ef402c18cc2c0b96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Check if knowledge">fcbd3da3dbf0ef402c18cc2c0b96194b</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>bcbd3da3dbf0ef402c18cc2c0b96194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>18</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create Knowledge</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>70bd3d63dbf0ef402c18cc2c0b961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>1668</x>
+        <y>455</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=70bd3d63dbf0ef402c18cc2c0b961947"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70bd3d63dbf0ef402c18cc2c0b961947</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>74bd3d63dbf0ef402c18cc2c0b961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>var sub = gs.getProperty('glide.knowman.submission.workflow');&#13;
+&#13;
+if (sub == 'true')&#13;
+    submitCandidate();&#13;
+else&#13;
+    submitDirect();&#13;
+&#13;
+function submitDirect() {&#13;
+    var kb = new GlideRecord("kb_knowledge");&#13;
+    kb.source = current.sys_id;&#13;
+    kb.short_description = current.short_description;&#13;
+	kb.text = current.u_incident_description;&#13;
+	kb.u_service_offering = current.service_offering;&#13;
+    kb.sys_domain = current.sys_domain;&#13;
+    kb.workflow_state = 'draft';&#13;
+	kb.kb_knowledge_base = gs.getProperty('knowledge.base.solution_itn');&#13;
+    kb.insert();&#13;
+    gs.addInfoMessage(gs.getMessage('Knowledge Article created') + ':  ' + kb.number + ' ' + gs.getMessage('based on closure of Incident') + ': ' + current.number);&#13;
+}&#13;
+&#13;
+function submitCandidate() {&#13;
+    var gr = new GlideRecord('kb_submission');&#13;
+    gr.parent = current.sys_id;&#13;
+    gr.short_description = current.short_description;&#13;
+    gr.sys_domain = current.sys_domain;&#13;
+    gr.text = current.comments.getHTMLValue();&#13;
+    gr.insert();&#13;
+    gs.addInfoMessage(gs.getMessage('Knowledge Submission created') + ':  ' + gr.number + ' ' + gs.getMessage('based on closure of Incident') + ': ' + current.number);&#13;
+&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70bd3d63dbf0ef402c18cc2c0b961947</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>74bd3d63dbf0ef402c18cc2c0b961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>var sub = gs.getProperty('glide.knowman.submission.workflow');&#13;
+&#13;
+if (sub == 'true')&#13;
+    submitCandidate();&#13;
+else&#13;
+    submitDirect();&#13;
+&#13;
+function submitDirect() {&#13;
+    var kb = new GlideRecord("kb_knowledge");&#13;
+    kb.source = current.sys_id;&#13;
+    kb.short_description = current.short_description;&#13;
+	kb.text = current.u_incident_description;&#13;
+	kb.u_service_offering = current.service_offering;&#13;
+    kb.sys_domain = current.sys_domain;&#13;
+    kb.workflow_state = 'draft';&#13;
+	kb.kb_knowledge_base = gs.getProperty('knowledge.base.solution_itn');&#13;
+    kb.insert();&#13;
+    gs.addInfoMessage(gs.getMessage('Knowledge Article created') + ':  ' + kb.number + ' ' + gs.getMessage('based on closure of Incident') + ': ' + current.number);&#13;
+}&#13;
+&#13;
+function submitCandidate() {&#13;
+    var gr = new GlideRecord('kb_submission');&#13;
+    gr.parent = current.sys_id;&#13;
+    gr.short_description = current.short_description;&#13;
+    gr.sys_domain = current.sys_domain;&#13;
+    gr.text = current.comments.getHTMLValue();&#13;
+    gr.insert();&#13;
+    gs.addInfoMessage(gs.getMessage('Knowledge Submission created') + ':  ' + gr.number + ' ' + gs.getMessage('based on closure of Incident') + ': ' + current.number);&#13;
+&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Knowledge">70bd3d63dbf0ef402c18cc2c0b961947</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>3cbd3d63dbf0ef402c18cc2c0b961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>15</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Delete active events</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>30bd3da3dbf0ef402c18cc2c0b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>977</x>
+        <y>478</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=30bd3da3dbf0ef402c18cc2c0b961950"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>30bd3da3dbf0ef402c18cc2c0b961950</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b0bd3da3dbf0ef402c18cc2c0b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>//Start by deleting all active scheduled events for this incident if there are any&#13;
+deleteEvents();&#13;
+&#13;
+function deleteEvents(){&#13;
+	var gr = new GlideRecord('sysevent');&#13;
+	gr.addQuery('instance', current.sys_id);&#13;
+	gr.addQuery('processed', '');&#13;
+	gr.addQuery('state', 'ready');&#13;
+	gr.addQuery('name', '!=', 'incident.update.notification');&#13;
+	gr.addQuery('name', '!=', 'incident.worknoted');&#13;
+	gr.query();&#13;
+	while (gr.next()) {&#13;
+		gr.deleteRecord();&#13;
+	}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>30bd3da3dbf0ef402c18cc2c0b961950</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b0bd3da3dbf0ef402c18cc2c0b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>//Start by deleting all active scheduled events for this incident if there are any&#13;
+deleteEvents();&#13;
+&#13;
+function deleteEvents(){&#13;
+	var gr = new GlideRecord('sysevent');&#13;
+	gr.addQuery('instance', current.sys_id);&#13;
+	gr.addQuery('processed', '');&#13;
+	gr.addQuery('state', 'ready');&#13;
+	gr.addQuery('name', '!=', 'incident.update.notification');&#13;
+	gr.addQuery('name', '!=', 'incident.worknoted');&#13;
+	gr.query();&#13;
+	while (gr.next()) {&#13;
+		gr.deleteRecord();&#13;
+	}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Delete active events">30bd3da3dbf0ef402c18cc2c0b961950</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f4bd3da3dbf0ef402c18cc2c0b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Delete active events</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>fcbd3da3dbf0ef402c18cc2c0b96195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>979</x>
+        <y>189</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=fcbd3da3dbf0ef402c18cc2c0b96195f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fcbd3da3dbf0ef402c18cc2c0b96195f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>70bd3da3dbf0ef402c18cc2c0b961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>//Start by deleting all active scheduled events for this incident if there are any&#13;
+deleteEvents();&#13;
+&#13;
+function deleteEvents(){&#13;
+	var gr = new GlideRecord('sysevent');&#13;
+	gr.addQuery('instance', current.sys_id);&#13;
+	gr.addQuery('processed', '');&#13;
+	gr.addQuery('state', 'ready');&#13;
+	gr.addQuery('name', '!=', 'incident.update.notification');&#13;
+	gr.addQuery('name', '!=', 'incident.worknoted');&#13;
+	gr.query();&#13;
+	while (gr.next()) {&#13;
+		gr.deleteRecord();&#13;
+	}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fcbd3da3dbf0ef402c18cc2c0b96195f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>70bd3da3dbf0ef402c18cc2c0b961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>//Start by deleting all active scheduled events for this incident if there are any&#13;
+deleteEvents();&#13;
+&#13;
+function deleteEvents(){&#13;
+	var gr = new GlideRecord('sysevent');&#13;
+	gr.addQuery('instance', current.sys_id);&#13;
+	gr.addQuery('processed', '');&#13;
+	gr.addQuery('state', 'ready');&#13;
+	gr.addQuery('name', '!=', 'incident.update.notification');&#13;
+	gr.addQuery('name', '!=', 'incident.worknoted');&#13;
+	gr.query();&#13;
+	while (gr.next()) {&#13;
+		gr.deleteRecord();&#13;
+	}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Delete active events">fcbd3da3dbf0ef402c18cc2c0b96195f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b4bd3da3dbf0ef402c18cc2c0b961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f0bd3da3dbf0ef402c18cc2c0b961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>1195</x>
+        <y>868</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f0bd3da3dbf0ef402c18cc2c0b961948"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for WF Event">88fbebdcac146426045370ed7901e2e2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>incident.assign</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f8bd3da3dbf0ef402c18cc2c0b961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>509</x>
+        <y>65</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f8bd3da3dbf0ef402c18cc2c0b961961"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f8bd3da3dbf0ef402c18cc2c0b961961</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>7cbd3da3dbf0ef402c18cc2c0b961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.assign</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f8bd3da3dbf0ef402c18cc2c0b961961</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>7cbd3da3dbf0ef402c18cc2c0b961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.assign</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="incident.assign">f8bd3da3dbf0ef402c18cc2c0b961961</activity>
+        <condition>activity.state == 'finished'</condition>
+        <condition_default display_value="Fired">8902eeb7ac14642602e00b12fc7059c0</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Fired</name>
+        <order>1</order>
+        <short_description>The event we were waiting on has been fired</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b0bd3da3dbf0ef402c18cc2c0b961962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for WF Event">88fbebdcac146426045370ed7901e2e2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>21</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>incident.cancel</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>70bd3da3dbf0ef402c18cc2c0b961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>513</x>
+        <y>776</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=70bd3da3dbf0ef402c18cc2c0b961949"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70bd3da3dbf0ef402c18cc2c0b961949</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>74bd3da3dbf0ef402c18cc2c0b961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.cancel</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70bd3da3dbf0ef402c18cc2c0b961949</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>74bd3da3dbf0ef402c18cc2c0b961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.cancel</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="incident.cancel">70bd3da3dbf0ef402c18cc2c0b961949</activity>
+        <condition>activity.state == 'finished'</condition>
+        <condition_default display_value="Fired">8902eeb7ac14642602e00b12fc7059c0</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Fired</name>
+        <order>1</order>
+        <short_description>The event we were waiting on has been fired</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>3cbd3da3dbf0ef402c18cc2c0b961949</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for WF Event">88fbebdcac146426045370ed7901e2e2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>35</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>incident.closed</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f0bd3da3dbf0ef402c18cc2c0b96195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>517</x>
+        <y>896</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f0bd3da3dbf0ef402c18cc2c0b96195e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f0bd3da3dbf0ef402c18cc2c0b96195e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>74bd3da3dbf0ef402c18cc2c0b96195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.closed</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f0bd3da3dbf0ef402c18cc2c0b96195e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>74bd3da3dbf0ef402c18cc2c0b96195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.closed</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="incident.closed">f0bd3da3dbf0ef402c18cc2c0b96195e</activity>
+        <condition>activity.state == 'finished'</condition>
+        <condition_default display_value="Fired">8902eeb7ac14642602e00b12fc7059c0</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Fired</name>
+        <order>1</order>
+        <short_description>The event we were waiting on has been fired</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b8bd3da3dbf0ef402c18cc2c0b96195e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for WF Event">88fbebdcac146426045370ed7901e2e2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>12</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>incident.resolve</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f0bd3da3dbf0ef402c18cc2c0b96194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>507</x>
+        <y>486</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f0bd3da3dbf0ef402c18cc2c0b96194a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f0bd3da3dbf0ef402c18cc2c0b96194a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>74bd3da3dbf0ef402c18cc2c0b96194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.resolve</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f0bd3da3dbf0ef402c18cc2c0b96194a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>74bd3da3dbf0ef402c18cc2c0b96194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.resolve</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="incident.resolve">f0bd3da3dbf0ef402c18cc2c0b96194a</activity>
+        <condition>activity.state == 'finished'</condition>
+        <condition_default display_value="Fired">8902eeb7ac14642602e00b12fc7059c0</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Fired</name>
+        <order>1</order>
+        <short_description>The event we were waiting on has been fired</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b8bd3da3dbf0ef402c18cc2c0b96194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for WF Event">88fbebdcac146426045370ed7901e2e2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>30</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>incident.resolve.child</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>70bd3da3dbf0ef402c18cc2c0b96195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>508</x>
+        <y>328</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=70bd3da3dbf0ef402c18cc2c0b96195f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70bd3da3dbf0ef402c18cc2c0b96195f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f0bd3da3dbf0ef402c18cc2c0b96195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.resolve.child</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70bd3da3dbf0ef402c18cc2c0b96195f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f0bd3da3dbf0ef402c18cc2c0b96195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.resolve.child</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="incident.resolve.child">70bd3da3dbf0ef402c18cc2c0b96195f</activity>
+        <condition>activity.state == 'finished'</condition>
+        <condition_default display_value="Fired">8902eeb7ac14642602e00b12fc7059c0</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Fired</name>
+        <order>1</order>
+        <short_description>The event we were waiting on has been fired</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>38bd3da3dbf0ef402c18cc2c0b96195f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Create Event">9f680b92c0a801640026553f665b429f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>16</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>incident.resolved.notification</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>3cbd3da3dbf0ef402c18cc2c0b961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>1207</x>
+        <y>477</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=3cbd3da3dbf0ef402c18cc2c0b961946"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3cbd3da3dbf0ef402c18cc2c0b961946</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>30bd3da3dbf0ef402c18cc2c0b961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>f9cd0c9bdba5df00f5287d7f2996193c</value>
+        <variable display_value="">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3cbd3da3dbf0ef402c18cc2c0b961946</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b4bd3da3dbf0ef402c18cc2c0b961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3cbd3da3dbf0ef402c18cc2c0b961946</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f0bd3da3dbf0ef402c18cc2c0b961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 1&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3cbd3da3dbf0ef402c18cc2c0b961946</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>30bd3da3dbf0ef402c18cc2c0b961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>f9cd0c9bdba5df00f5287d7f2996193c</value>
+        <variable display_value="">c35dcc7a0a0a0ba96248a70926fa68b5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3cbd3da3dbf0ef402c18cc2c0b961946</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f0bd3da3dbf0ef402c18cc2c0b961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 1&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd0310a0a0ba96248a70936d276b3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>3cbd3da3dbf0ef402c18cc2c0b961946</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b4bd3da3dbf0ef402c18cc2c0b961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>(function() {&#13;
+	// return the value to use for Parameter 2&#13;
+	return "";&#13;
+}());</value>
+        <variable display_value="">c35dd3ef0a0a0ba96248a70947e35325</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="incident.resolved.notification">3cbd3da3dbf0ef402c18cc2c0b961946</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>7cbd3da3dbf0ef402c18cc2c0b961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for WF Event">88fbebdcac146426045370ed7901e2e2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>19</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>incident.resolved.updated</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>bcbd3da3dbf0ef402c18cc2c0b961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>510</x>
+        <y>652</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=bcbd3da3dbf0ef402c18cc2c0b961950"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bcbd3da3dbf0ef402c18cc2c0b961950</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f4bd3da3dbf0ef402c18cc2c0b96195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.resolved.updated</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bcbd3da3dbf0ef402c18cc2c0b961950</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f4bd3da3dbf0ef402c18cc2c0b96195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.resolved.updated</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="incident.resolved.updated">bcbd3da3dbf0ef402c18cc2c0b961950</activity>
+        <condition>activity.state == 'finished'</condition>
+        <condition_default display_value="Fired">8902eeb7ac14642602e00b12fc7059c0</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Fired</name>
+        <order>1</order>
+        <short_description>The event we were waiting on has been fired</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>3cbd3da3dbf0ef402c18cc2c0b96195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for WF Event">88fbebdcac146426045370ed7901e2e2</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>incident.wip</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>7cbd3da3dbf0ef402c18cc2c0b961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>509</x>
+        <y>193</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=7cbd3da3dbf0ef402c18cc2c0b961960"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7cbd3da3dbf0ef402c18cc2c0b961960</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>fcbd3da3dbf0ef402c18cc2c0b961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.wip</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7cbd3da3dbf0ef402c18cc2c0b961960</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>fcbd3da3dbf0ef402c18cc2c0b961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>incident.wip</value>
+        <variable display_value="">c35dfb0f0a0a0ba96248a70973bbf0d9</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="incident.wip">7cbd3da3dbf0ef402c18cc2c0b961960</activity>
+        <condition>activity.state == 'finished'</condition>
+        <condition_default display_value="Fired">8902eeb7ac14642602e00b12fc7059c0</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Fired</name>
+        <order>1</order>
+        <short_description>The event we were waiting on has been fired</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>34bd3da3dbf0ef402c18cc2c0b961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>33</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Initialize script</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>78bd3da3dbf0ef402c18cc2c0b961962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>53</x>
+        <y>374</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=78bd3da3dbf0ef402c18cc2c0b961962"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>78bd3da3dbf0ef402c18cc2c0b961962</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f8bd3da3dbf0ef402c18cc2c0b961962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>var newFunction = new InitializeIncident();&#13;
+newFunction.initializeIncident();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>78bd3da3dbf0ef402c18cc2c0b961962</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f8bd3da3dbf0ef402c18cc2c0b961962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>var newFunction = new InitializeIncident();&#13;
+newFunction.initializeIncident();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Initialize script">78bd3da3dbf0ef402c18cc2c0b961962</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>30bd3da3dbf0ef402c18cc2c0b961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="If">98f621ca0a0a0b5900f7c291f5e45a0e</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>32</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>New record?</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f8bd3d63dbf0ef402c18cc2c0b961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>54</x>
+        <y>202</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f8bd3d63dbf0ef402c18cc2c0b961943"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f8bd3d63dbf0ef402c18cc2c0b961943</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>3cbd3d63dbf0ef402c18cc2c0b961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>// Shows if record is a new task or not&#13;
+&#13;
+var answer = ifScript();&#13;
+&#13;
+function ifScript(){&#13;
+	if (current.isNewRecord()){&#13;
+		return 'yes';&#13;
+	}&#13;
+	else&#13;
+		return 'no';&#13;
+}</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f8bd3d63dbf0ef402c18cc2c0b961943</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>70bd3d63dbf0ef402c18cc2c0b961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f8bd3d63dbf0ef402c18cc2c0b961943</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>78bd3d63dbf0ef402c18cc2c0b961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f8bd3d63dbf0ef402c18cc2c0b961943</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>70bd3d63dbf0ef402c18cc2c0b961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f8bd3d63dbf0ef402c18cc2c0b961943</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>78bd3d63dbf0ef402c18cc2c0b961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f8bd3d63dbf0ef402c18cc2c0b961943</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>3cbd3d63dbf0ef402c18cc2c0b961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>// Shows if record is a new task or not&#13;
+&#13;
+var answer = ifScript();&#13;
+&#13;
+function ifScript(){&#13;
+	if (current.isNewRecord()){&#13;
+		return 'yes';&#13;
+	}&#13;
+	else&#13;
+		return 'no';&#13;
+}</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="New record?">f8bd3d63dbf0ef402c18cc2c0b961943</activity>
+        <condition>activity.result == 'no'</condition>
+        <condition_default display_value="No">c1eff6430a0a0b59000f955abe842c94</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>No</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>74bd3d63dbf0ef402c18cc2c0b961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="New record?">f8bd3d63dbf0ef402c18cc2c0b961943</activity>
+        <condition>activity.result == 'yes'</condition>
+        <condition_default display_value="Yes">c1ef63200a0a0b59005ef89bae78feb7</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Yes</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f0bd3d63dbf0ef402c18cc2c0b961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>31</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Resolve all child incidents</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b0bd3da3dbf0ef402c18cc2c0b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>759</x>
+        <y>325</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b0bd3da3dbf0ef402c18cc2c0b96194f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b0bd3da3dbf0ef402c18cc2c0b96194f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>34bd3da3dbf0ef402c18cc2c0b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>closeChild();&#13;
+&#13;
+function closeChild(){&#13;
+	var close_code = current.close_code;&#13;
+	var close_notes = current.close_notes;&#13;
+	&#13;
+	//Look for all child incidents related to this parent incident.&#13;
+	//Copy close code and notes from parent to child and resolve it.&#13;
+	var gr = new GlideRecord('incident');&#13;
+	gr.addQuery('parent_incident', current.sys_id);&#13;
+	gr.addQuery('active', 'true');&#13;
+	gr.query();&#13;
+	while (gr.next()) {&#13;
+		gr.state.setValue('6');&#13;
+		gr.close_code = close_code;&#13;
+		gr.close_notes = close_notes;&#13;
+		gr.hold_reason = '';&#13;
+		gr.update();&#13;
+	}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b0bd3da3dbf0ef402c18cc2c0b96194f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>34bd3da3dbf0ef402c18cc2c0b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>closeChild();&#13;
+&#13;
+function closeChild(){&#13;
+	var close_code = current.close_code;&#13;
+	var close_notes = current.close_notes;&#13;
+	&#13;
+	//Look for all child incidents related to this parent incident.&#13;
+	//Copy close code and notes from parent to child and resolve it.&#13;
+	var gr = new GlideRecord('incident');&#13;
+	gr.addQuery('parent_incident', current.sys_id);&#13;
+	gr.addQuery('active', 'true');&#13;
+	gr.query();&#13;
+	while (gr.next()) {&#13;
+		gr.state.setValue('6');&#13;
+		gr.close_code = close_code;&#13;
+		gr.close_notes = close_notes;&#13;
+		gr.hold_reason = '';&#13;
+		gr.update();&#13;
+	}&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Resolve all child incidents">b0bd3da3dbf0ef402c18cc2c0b96194f</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>78bd3da3dbf0ef402c18cc2c0b96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>10</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set Assigned to if empty</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>45bd3da3dbf0ef402c18cc2c0b961964</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-10 08:08:25</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>1203</x>
+        <y>190</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=45bd3da3dbf0ef402c18cc2c0b961964"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45bd3da3dbf0ef402c18cc2c0b961964</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>c5bd3da3dbf0ef402c18cc2c0b961964</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-10 08:08:25</sys_updated_on>
+        <value>if(current.assigned_to == '' &amp;&amp; gs.getUserID() != current.caller){&#13;
+	current.setValue('assigned_to', gs.getUserID());&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>45bd3da3dbf0ef402c18cc2c0b961964</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>c5bd3da3dbf0ef402c18cc2c0b961964</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-10 08:08:25</sys_updated_on>
+        <value>if(current.assigned_to == '' &amp;&amp; gs.getUserID() != current.caller){&#13;
+	current.setValue('assigned_to', gs.getUserID());&#13;
+}</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set Assigned to if empty">45bd3da3dbf0ef402c18cc2c0b961964</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>0dbd3da3dbf0ef402c18cc2c0b961964</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>20</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set in progress</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>bcbd3da3dbf0ef402c18cc2c0b961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>749</x>
+        <y>650</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=bcbd3da3dbf0ef402c18cc2c0b961945"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bcbd3da3dbf0ef402c18cc2c0b961945</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>30bd3da3dbf0ef402c18cc2c0b961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>state=2^hold_reason=^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bcbd3da3dbf0ef402c18cc2c0b961945</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>30bd3da3dbf0ef402c18cc2c0b961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>state=2^hold_reason=^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set in progress">bcbd3da3dbf0ef402c18cc2c0b961945</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>74bd3da3dbf0ef402c18cc2c0b961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>34</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set resolution note</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f4bd3da3dbf0ef402c18cc2c0b961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>990</x>
+        <y>778</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f4bd3da3dbf0ef402c18cc2c0b961963"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4bd3da3dbf0ef402c18cc2c0b961963</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>78bd3da3dbf0ef402c18cc2c0b961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>closeNotes();&#13;
+&#13;
+function closeNotes(){&#13;
+	current.close_notes = "This Incident was canceled by " + gs.getUserDisplayName();&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f4bd3da3dbf0ef402c18cc2c0b961963</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>78bd3da3dbf0ef402c18cc2c0b961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>closeNotes();&#13;
+&#13;
+function closeNotes(){&#13;
+	current.close_notes = "This Incident was canceled by " + gs.getUserDisplayName();&#13;
+}&#13;
+</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set resolution note">f4bd3da3dbf0ef402c18cc2c0b961963</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>bcbd3da3dbf0ef402c18cc2c0b961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set State and clear on hold info</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>30bd3da3dbf0ef402c18cc2c0b961945</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-10 08:14:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>745</x>
+        <y>65</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=30bd3da3dbf0ef402c18cc2c0b961945"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>30bd3da3dbf0ef402c18cc2c0b961945</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b0bd3da3dbf0ef402c18cc2c0b961945</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-10 08:14:01</sys_updated_on>
+        <value>hold_reason=^state=2^assigned_to=^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>30bd3da3dbf0ef402c18cc2c0b961945</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b0bd3da3dbf0ef402c18cc2c0b961945</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-10 08:14:01</sys_updated_on>
+        <value>hold_reason=^state=2^assigned_to=^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set State and clear on hold info">30bd3da3dbf0ef402c18cc2c0b961945</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f4bd3da3dbf0ef402c18cc2c0b961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>14</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set State and clear on hold info</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>70bd3da3dbf0ef402c18cc2c0b96194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>747</x>
+        <y>476</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=70bd3da3dbf0ef402c18cc2c0b96194b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70bd3da3dbf0ef402c18cc2c0b96194b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f0bd3da3dbf0ef402c18cc2c0b96194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>state=6^hold_reason=^resolved_at=javascript:gs.nowDateTime()^resolved_by=javascript:gs.getUserID()^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>70bd3da3dbf0ef402c18cc2c0b96194b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f0bd3da3dbf0ef402c18cc2c0b96194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>state=6^hold_reason=^resolved_at=javascript:gs.nowDateTime()^resolved_by=javascript:gs.getUserID()^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set State and clear on hold info">70bd3da3dbf0ef402c18cc2c0b96194b</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>38bd3da3dbf0ef402c18cc2c0b96194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set State and clear on hold info</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>bcbd3d63dbf0ef402c18cc2c0b961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>748</x>
+        <y>189</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=bcbd3d63dbf0ef402c18cc2c0b961945"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bcbd3d63dbf0ef402c18cc2c0b961945</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b0bd3d63dbf0ef402c18cc2c0b961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>state=2^hold_reason=^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bcbd3d63dbf0ef402c18cc2c0b961945</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>b0bd3d63dbf0ef402c18cc2c0b961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>state=2^hold_reason=^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set State and clear on hold info">bcbd3d63dbf0ef402c18cc2c0b961945</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>78bd3d63dbf0ef402c18cc2c0b961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>22</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set State, Close code, Close info and clear hold reason</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>74bd3da3dbf0ef402c18cc2c0b96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+        <x>751</x>
+        <y>774</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=74bd3da3dbf0ef402c18cc2c0b96194d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74bd3da3dbf0ef402c18cc2c0b96194d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f4bd3da3dbf0ef402c18cc2c0b96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>state=8^incident_state=8^hold_reason=^close_code=Canceled^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74bd3da3dbf0ef402c18cc2c0b96194d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>f4bd3da3dbf0ef402c18cc2c0b96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <value>state=8^incident_state=8^hold_reason=^close_code=Canceled^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set State, Close code, Close info and clear hold reason">74bd3da3dbf0ef402c18cc2c0b96194d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>3cbd3da3dbf0ef402c18cc2c0b96194d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Fired">3cbd3da3dbf0ef402c18cc2c0b96195d</condition>
+        <from display_value="incident.resolved.updated">bcbd3da3dbf0ef402c18cc2c0b961950</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>01bd3da3dbf0ef402c18cc2c0b961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Set in progress">bcbd3da3dbf0ef402c18cc2c0b961945</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">78bd3d63dbf0ef402c18cc2c0b961946</condition>
+        <from display_value="Set State and clear on hold info">bcbd3d63dbf0ef402c18cc2c0b961945</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>01bd3da3dbf0ef402c18cc2c0b961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Delete active events">fcbd3da3dbf0ef402c18cc2c0b96195f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Fired">34bd3da3dbf0ef402c18cc2c0b961961</condition>
+        <from display_value="incident.wip">7cbd3da3dbf0ef402c18cc2c0b961960</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>05bd3da3dbf0ef402c18cc2c0b961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Set State and clear on hold info">bcbd3d63dbf0ef402c18cc2c0b961945</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">74bd3d63dbf0ef402c18cc2c0b961945</condition>
+        <from display_value="New record?">f8bd3d63dbf0ef402c18cc2c0b961943</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>05bd3da3dbf0ef402c18cc2c0b961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Initialize script">78bd3da3dbf0ef402c18cc2c0b961962</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Fired">b8bd3da3dbf0ef402c18cc2c0b96194a</condition>
+        <from display_value="incident.resolve">f0bd3da3dbf0ef402c18cc2c0b96194a</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>05bd3da3dbf0ef402c18cc2c0b96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Set State and clear on hold info">70bd3da3dbf0ef402c18cc2c0b96194b</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Fired">38bd3da3dbf0ef402c18cc2c0b96195f</condition>
+        <from display_value="incident.resolve.child">70bd3da3dbf0ef402c18cc2c0b96195f</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>0dbd3da3dbf0ef402c18cc2c0b961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Resolve all child incidents">b0bd3da3dbf0ef402c18cc2c0b96194f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">78bd3da3dbf0ef402c18cc2c0b961944</condition>
+        <from display_value="Begin">b0bd3d63dbf0ef402c18cc2c0b961948</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>0dbd3da3dbf0ef402c18cc2c0b961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="New record?">f8bd3d63dbf0ef402c18cc2c0b961943</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">3cbd3d63dbf0ef402c18cc2c0b961947</condition>
+        <from display_value="Create Knowledge">70bd3d63dbf0ef402c18cc2c0b961947</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>41bd3da3dbf0ef402c18cc2c0b961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.resolve">f0bd3da3dbf0ef402c18cc2c0b96194a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">bcbd3da3dbf0ef402c18cc2c0b96194c</condition>
+        <from display_value="Check if knowledge">fcbd3da3dbf0ef402c18cc2c0b96194b</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>41bd3da3dbf0ef402c18cc2c0b96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Create Knowledge">70bd3d63dbf0ef402c18cc2c0b961947</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f8bd3da3dbf0ef402c18cc2c0b96194e</condition>
+        <from display_value="">f0bd3da3dbf0ef402c18cc2c0b96194e</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>41bd3da3dbf0ef402c18cc2c0b96196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.cancel">70bd3da3dbf0ef402c18cc2c0b961949</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Fired">b8bd3da3dbf0ef402c18cc2c0b96195e</condition>
+        <from display_value="incident.closed">f0bd3da3dbf0ef402c18cc2c0b96195e</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>49bd3da3dbf0ef402c18cc2c0b961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="End">f0bd3da3dbf0ef402c18cc2c0b961948</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f4bd3da3dbf0ef402c18cc2c0b961945</condition>
+        <from display_value="Set State and clear on hold info">30bd3da3dbf0ef402c18cc2c0b961945</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>49bd3da3dbf0ef402c18cc2c0b961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.assign">f8bd3da3dbf0ef402c18cc2c0b961961</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f8bd3da3dbf0ef402c18cc2c0b96194e</condition>
+        <from display_value="">f0bd3da3dbf0ef402c18cc2c0b96194e</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>49bd3da3dbf0ef402c18cc2c0b96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.closed">f0bd3da3dbf0ef402c18cc2c0b96195e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">78bd3da3dbf0ef402c18cc2c0b96194f</condition>
+        <from display_value="Resolve all child incidents">b0bd3da3dbf0ef402c18cc2c0b96194f</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>4dbd3da3dbf0ef402c18cc2c0b961965</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.resolve.child">70bd3da3dbf0ef402c18cc2c0b96195f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">3cbd3da3dbf0ef402c18cc2c0b96194d</condition>
+        <from display_value="Set State, Close code, Close info and clear hold reason">74bd3da3dbf0ef402c18cc2c0b96194d</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>4dbd3da3dbf0ef402c18cc2c0b961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Set resolution note">f4bd3da3dbf0ef402c18cc2c0b961963</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Fired">3cbd3da3dbf0ef402c18cc2c0b961949</condition>
+        <from display_value="incident.cancel">70bd3da3dbf0ef402c18cc2c0b961949</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>4dbd3da3dbf0ef402c18cc2c0b961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Set State, Close code, Close info and clear hold reason">74bd3da3dbf0ef402c18cc2c0b96194d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f8bd3da3dbf0ef402c18cc2c0b96194e</condition>
+        <from display_value="">f0bd3da3dbf0ef402c18cc2c0b96194e</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>4dbd3da3dbf0ef402c18cc2c0b96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.assign">f8bd3da3dbf0ef402c18cc2c0b961961</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Yes">f0bd3d63dbf0ef402c18cc2c0b961945</condition>
+        <from display_value="New record?">f8bd3d63dbf0ef402c18cc2c0b961943</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>81bd3da3dbf0ef402c18cc2c0b961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="">f0bd3da3dbf0ef402c18cc2c0b96194e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">30bd3da3dbf0ef402c18cc2c0b961963</condition>
+        <from display_value="Initialize script">78bd3da3dbf0ef402c18cc2c0b961962</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>85bd3da3dbf0ef402c18cc2c0b961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="">f0bd3da3dbf0ef402c18cc2c0b96194e</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">bcbd3da3dbf0ef402c18cc2c0b961963</condition>
+        <from display_value="Set resolution note">f4bd3da3dbf0ef402c18cc2c0b961963</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>85bd3da3dbf0ef402c18cc2c0b961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="End">f0bd3da3dbf0ef402c18cc2c0b961948</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7cbd3da3dbf0ef402c18cc2c0b961947</condition>
+        <from display_value="incident.resolved.notification">3cbd3da3dbf0ef402c18cc2c0b961946</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>89bd3da3dbf0ef402c18cc2c0b961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Check if knowledge">fcbd3da3dbf0ef402c18cc2c0b96194b</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">74bd3da3dbf0ef402c18cc2c0b961946</condition>
+        <from display_value="Set in progress">bcbd3da3dbf0ef402c18cc2c0b961945</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>89bd3da3dbf0ef402c18cc2c0b961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.resolved.updated">bcbd3da3dbf0ef402c18cc2c0b961950</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Fired">b0bd3da3dbf0ef402c18cc2c0b961962</condition>
+        <from display_value="incident.assign">f8bd3da3dbf0ef402c18cc2c0b961961</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>c1bd3da3dbf0ef402c18cc2c0b961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Set State and clear on hold info">30bd3da3dbf0ef402c18cc2c0b961945</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">0dbd3da3dbf0ef402c18cc2c0b961964</condition>
+        <from display_value="Set Assigned to if empty">45bd3da3dbf0ef402c18cc2c0b961964</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>c1bd3da3dbf0ef402c18cc2c0b961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.wip">7cbd3da3dbf0ef402c18cc2c0b961960</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f8bd3da3dbf0ef402c18cc2c0b96194e</condition>
+        <from display_value="">f0bd3da3dbf0ef402c18cc2c0b96194e</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>c1bd3da3dbf0ef402c18cc2c0b96196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.wip">7cbd3da3dbf0ef402c18cc2c0b961960</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">38bd3da3dbf0ef402c18cc2c0b96194b</condition>
+        <from display_value="Set State and clear on hold info">70bd3da3dbf0ef402c18cc2c0b96194b</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>c5bd3da3dbf0ef402c18cc2c0b961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Delete active events">30bd3da3dbf0ef402c18cc2c0b961950</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">b4bd3da3dbf0ef402c18cc2c0b961960</condition>
+        <from display_value="Delete active events">fcbd3da3dbf0ef402c18cc2c0b96195f</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>c5bd3da3dbf0ef402c18cc2c0b961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="Set Assigned to if empty">45bd3da3dbf0ef402c18cc2c0b961964</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f8bd3da3dbf0ef402c18cc2c0b96194e</condition>
+        <from display_value="">f0bd3da3dbf0ef402c18cc2c0b96194e</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>c5bd3da3dbf0ef402c18cc2c0b96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.resolve.child">70bd3da3dbf0ef402c18cc2c0b96195f</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f8bd3da3dbf0ef402c18cc2c0b96194e</condition>
+        <from display_value="">f0bd3da3dbf0ef402c18cc2c0b96194e</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>c9bd3da3dbf0ef402c18cc2c0b96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.resolve">f0bd3da3dbf0ef402c18cc2c0b96194a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f4bd3da3dbf0ef402c18cc2c0b961950</condition>
+        <from display_value="Delete active events">30bd3da3dbf0ef402c18cc2c0b961950</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>cdbd3da3dbf0ef402c18cc2c0b961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.resolved.notification">3cbd3da3dbf0ef402c18cc2c0b961946</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="No">3cbd3da3dbf0ef402c18cc2c0b96194c</condition>
+        <from display_value="Check if knowledge">fcbd3da3dbf0ef402c18cc2c0b96194b</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>cdbd3da3dbf0ef402c18cc2c0b961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.resolve">f0bd3da3dbf0ef402c18cc2c0b96194a</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f8bd3da3dbf0ef402c18cc2c0b96194e</condition>
+        <from display_value="">f0bd3da3dbf0ef402c18cc2c0b96194e</from>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>cdbd3da3dbf0ef402c18cc2c0b96196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <to display_value="incident.resolved.updated">bcbd3da3dbf0ef402c18cc2c0b961950</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-10-03 07:31:10</sys_created_on>
+        <sys_id>70bd3d63dbf0ef402c18cc2c0b961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-10-03 07:31:10</sys_updated_on>
+        <workflow_version display_value="HSE Incident Management">7cbd3d63dbf0ef402c18cc2c0b961941</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=d9175303db65df00f5287d7f299619a1^sys_id!=7cbd3d63dbf0ef402c18cc2c0b961941">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

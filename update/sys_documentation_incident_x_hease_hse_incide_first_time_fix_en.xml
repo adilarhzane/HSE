@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="x_hease_hse_incide_first_time_fix" label="First time fix" language="en" table="incident">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_hease_hse_incide_first_time_fix</element>
+            <help/>
+            <hint/>
+            <label>First time fix</label>
+            <language>en</language>
+            <name>incident</name>
+            <plural>First time fixes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-08-10 09:25:19</sys_created_on>
+            <sys_id>62f19c1adbbb9f002c18cc2c0b9619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>First time fix</sys_name>
+            <sys_package display_value="HSE Incident Management" source="x_hease_hse_incide">60669fcfdb25df00f5287d7f299619df</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HSE Incident Management">60669fcfdb25df00f5287d7f299619df</sys_scope>
+            <sys_update_name>sys_documentation_incident_x_hease_hse_incide_first_time_fix_en</sys_update_name>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-08-10 09:25:19</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="89b03bd8dbfd53402c18cc2c0b96196b" sys_domain="global" table="incident" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-04-27 10:25:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8db03bd8dbfd53402c18cc2c0b96196d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">89b03bd8dbfd53402c18cc2c0b96196b</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">c5b03bd8dbfd53402c18cc2c0b96196a</sys_ui_section>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-04-27 10:25:01</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-04-27 12:24:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aafb8c28db3193402c18cc2c0b961950</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">89b03bd8dbfd53402c18cc2c0b96196b</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">a2fb0c28db3193402c18cc2c0b9619bd</sys_ui_section>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-05-08 10:29:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-04-27 12:28:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f2dcc468db3193402c18cc2c0b961987</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">89b03bd8dbfd53402c18cc2c0b96196b</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">36dc4468db3193402c18cc2c0b96197a</sys_ui_section>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-05-08 10:29:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-04-27 12:28:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>941d4868db3193402c18cc2c0b961930</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">89b03bd8dbfd53402c18cc2c0b96196b</sys_ui_form>
+            <sys_ui_section caption="Resolution information" display_value="Resolution information" name="incident" sys_domain="global" view="c5b03bd8dbfd53402c18cc2c0b961967">541d8468db3193402c18cc2c0b96192a</sys_ui_section>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-05-08 10:29:47</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>adil.arhzane</sys_created_by>
+            <sys_created_on>2018-04-27 10:25:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89b03bd8dbfd53402c18cc2c0b96196b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="HSE Incident Management" source="x_hease_hse_incide">60669fcfdb25df00f5287d7f299619df</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HSE Incident Management">60669fcfdb25df00f5287d7f299619df</sys_scope>
+            <sys_update_name>sys_ui_form_sections_89b03bd8dbfd53402c18cc2c0b96196b</sys_update_name>
+            <sys_updated_by>adil.arhzane</sys_updated_by>
+            <sys_updated_on>2018-04-27 10:25:00</sys_updated_on>
+            <sys_user/>
+            <view display_value="HSE Default" name="HSE_Default">c5b03bd8dbfd53402c18cc2c0b961967</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

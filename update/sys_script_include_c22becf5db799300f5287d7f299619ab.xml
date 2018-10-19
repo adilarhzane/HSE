@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_hease_hse_incide.InitializeIncident</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>InitializeIncident</name>
+        <script><![CDATA[var InitializeIncident = Class.create();
+InitializeIncident.prototype = {
+	initialize: function() {
+	},
+	
+	initializeIncident: function(){
+		//Set Impact based on Business Criticality if Impact is empty
+		if(current.impact == '' && current.sys_class_name != 'sc_req'){
+			current.setValue('impact', current.business_service.busines_criticality);
+		}
+		
+		//Set Location to Requestor Location if Location is empty
+		if(current.location == ''){
+			current.setValue('location', current.caller_id.location);
+		}
+		
+		/*Se AD name to Requestor AD name if empty
+		if(!current.u_ad_name){
+			current.setValue('u_ad_name', current.caller_id.u_ad_name);
+		}*/
+	},
+	
+	type: 'InitializeIncident'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>adil.arhzane</sys_created_by>
+        <sys_created_on>2018-05-01 12:33:10</sys_created_on>
+        <sys_id>c22becf5db799300f5287d7f299619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>InitializeIncident</sys_name>
+        <sys_package display_value="HSE Incident Management" source="x_hease_hse_incide">60669fcfdb25df00f5287d7f299619df</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="HSE Incident Management">60669fcfdb25df00f5287d7f299619df</sys_scope>
+        <sys_update_name>sys_script_include_c22becf5db799300f5287d7f299619ab</sys_update_name>
+        <sys_updated_by>adil.arhzane</sys_updated_by>
+        <sys_updated_on>2018-05-01 12:33:10</sys_updated_on>
+    </sys_script_include>
+</record_update>
